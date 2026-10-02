@@ -1,0 +1,21 @@
+{
+  "name": "inlead",
+  "interface": {
+    "displayName": "Inlead"
+  },
+  "plugins": [
+    {
+      "name": "inlead",
+      "source": {
+        "source": "local",
+        "path": "./plugins/inlead"
+      },
+      "description": "Connect your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing.",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Business & Operations"
+    }
+  ]
+}

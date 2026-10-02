@@ -1,0 +1,24 @@
+{
+  "name": "inlead",
+  "displayName": "Inlead",
+  "version": "0.6.0",
+  "description": "Connect your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account: no token to copy.",
+  "author": {
+    "name": "Inlead",
+    "email": "suporte@inlead.digital"
+  },
+  "homepage": "https://inlead.digital",
+  "license": "MIT",
+  "keywords": [
+    "inlead",
+    "funnel",
+    "quiz",
+    "lead-generation",
+    "conversion",
+    "marketing",
+    "analytics"
+  ],
+  "logo": "./assets/logo.svg",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

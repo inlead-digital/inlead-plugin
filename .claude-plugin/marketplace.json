@@ -1,0 +1,35 @@
+{
+  "name": "inlead",
+  "owner": {
+    "name": "Inlead",
+    "email": "suporte@inlead.digital",
+    "url": "https://inlead.digital"
+  },
+  "description": "Official Inlead plugins for Claude: conversion analysis and lead-capture funnel building.",
+  "plugins": [
+    {
+      "name": "inlead",
+      "source": "./plugins/inlead",
+      "displayName": "Inlead",
+      "description": "Connect Claude to your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account when Claude asks: no token to copy.",
+      "version": "0.6.0",
+      "author": {
+        "name": "Inlead",
+        "email": "suporte@inlead.digital",
+        "url": "https://inlead.digital"
+      },
+      "homepage": "https://inlead.digital",
+      "category": "productivity",
+      "keywords": [
+        "inlead",
+        "funnel",
+        "quiz",
+        "lead-generation",
+        "conversion",
+        "marketing",
+        "analytics"
+      ],
+      "license": "MIT"
+    }
+  ]
+}

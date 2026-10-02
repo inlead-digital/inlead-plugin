@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "inlead",
+  "version": "0.6.0",
+  "description": "Connect your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account: no token to copy.",
+  "author": {
+    "name": "Inlead",
+    "email": "suporte@inlead.digital",
+    "url": "https://inlead.digital"
+  },
+  "homepage": "https://inlead.digital",
+  "license": "MIT",
+  "keywords": [
+    "inlead",
+    "funnel",
+    "quiz",
+    "lead-generation",
+    "conversion",
+    "marketing",
+    "analytics"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Inlead",
+        "shortDescription": "Analyze and build funnels",
+        "longDescription": "Inlead is a platform for lead-capture funnels and quizzes. This plugin connects your Inlead account so you can ask for a digest of every funnel in a period, find which funnel converts worst and at which step people drop off, see who your leads are from their answers, review a draft against proven conversion practices for quiz funnels, apply the fixes, and draft a new funnel from a briefing. Changes are saved only after you confirm, and never published: you review and publish them in the Inlead editor.\n\nYou sign in with your Inlead account on an Inlead page and choose whether the assistant may also create and edit funnels. Reading is read-only; the plugin never reads individual leads' contact data, only aggregated metrics and answer distributions. Requires an Inlead account with an active plan.",
+        "developerName": "Inlead",
+        "category": "Business & Operations",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://inlead.digital",
+        "supportURL": "https://ajuda.inlead.digital",
+        "privacyPolicyURL": "https://inlead.digital/comunicados/politica-de-privacidade/",
+        "termsOfServiceURL": "https://inlead.digital/comunicados/termos-de-uso/",
+        "defaultPrompt": [
+          "Which of my Inlead funnels converts worst, and where do people drop off?",
+          "Give me a digest of all my Inlead funnels for this month.",
+          "Review my Inlead funnel draft before I publish it."
+        ],
+        "brandColor": "#000000",
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.svg"
+      }
+    }
+  }
+}

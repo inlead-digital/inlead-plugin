@@ -1,0 +1,13 @@
+# Internal test notes — contain local paths, staging URLs and account details. Never publish.
+TESTES.md
+docs/internal/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build artifacts
+*.zip
+dist/
+__pycache__/
