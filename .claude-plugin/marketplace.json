@@ -12,7 +12,7 @@
       "source": "./plugins/inlead",
       "displayName": "Inlead",
       "description": "Connect Claude to your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account when Claude asks: no token to copy.",
-      "version": "0.6.0",
+      "version": "0.6.1",
       "author": {
         "name": "Inlead",
         "email": "suporte@inlead.digital",

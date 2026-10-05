@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "inlead",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Connect your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account: no token to copy.",
   "author": {
     "name": "Inlead",
@@ -40,6 +40,19 @@
         "brandColor": "#000000",
         "composerIcon": "./assets/logo.svg",
         "logo": "./assets/logo.svg"
+      },
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "publication": {
+        "countries": [
+          "BR"
+        ],
+        "release_notes": "First release for ChatGPT and Codex: portfolio digest, conversion and drop-off diagnosis, lead profile from aggregated answers, structural review of drafts, applying review fixes and drafting new funnels. Writes are saved as drafts only and never published.",
+        "translations": {
+          "pt-BR": {
+            "subtitle": "Analise e melhore seus funis",
+            "description": "A Inlead é uma plataforma de funis e quizzes de captura de leads. Este plugin conecta sua conta Inlead para você pedir um resumo de todos os funis em um período, descobrir qual funil converte pior e em qual etapa as pessoas desistem, entender quem são seus leads pelas respostas, revisar um rascunho com base em boas práticas de conversão para funis de quiz, aplicar as correções e criar um novo funil a partir de um briefing. As alterações só são salvas depois que você confirma, e nunca são publicadas: você revisa e publica no editor da Inlead.\n\nVocê entra com sua conta Inlead em uma página da Inlead e escolhe se o assistente também pode criar e editar funis. A leitura é sempre somente leitura; o plugin nunca lê dados de contato de leads individuais, apenas métricas agregadas e distribuições de respostas. Requer uma conta Inlead com plano ativo."
+          }
+        }
       }
     }
   }

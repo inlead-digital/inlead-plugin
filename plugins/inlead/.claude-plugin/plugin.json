@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "inlead",
   "displayName": "Inlead",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Connect Claude to your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account when Claude asks: no token to copy.",
   "author": {
     "name": "Inlead",
