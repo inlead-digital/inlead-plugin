@@ -15,10 +15,10 @@ MANIFESTS = [
     PLUGIN / "plugin.json",
 ]
 
-# The OpenAI package leaves the MCP files out: the portal registers the server by URL.
+# The OpenAI package must carry mcp.json: OpenAI can't add an MCP server to a skills-only plugin later.
 PACKAGES = {
     "claude": [".claude-plugin", ".mcp.json", "README.md", "skills"],
-    "openai": ["plugin.json", "README.md", "assets", "skills"],
+    "openai": ["plugin.json", "mcp.json", "README.md", "assets", "skills"],
 }
 
 IGNORED = {".DS_Store", "Thumbs.db", "desktop.ini"}
