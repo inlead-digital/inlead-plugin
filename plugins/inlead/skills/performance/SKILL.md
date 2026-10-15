@@ -32,7 +32,9 @@ Take the funnel from the user's request, if they named one.
 3. `get_funnel_steps_report` — *where*: the drop-off curve, whole funnel in
    one call.
 4. `get_funnel_step_answers` — *why*: only for the steps that step 3
-   flagged.
+   flagged. `distribution_disabled`, `sensitive_blocked` or `small_sample`
+   means the answers are withheld to protect the leads: say so, diagnose from
+   steps 2–3 only, and never estimate a hidden or `suppressed` count.
 
 **Stop early when there is nothing to diagnose.** If `list_funnels` shows no
 starts for every funnel in the period, say so and stop: suggest a longer

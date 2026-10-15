@@ -47,8 +47,9 @@ one it is, ask.
    The connector dialog opens already filled with Inlead's server: keep the
    defaults, add no header, and confirm.
 2. Click **Connect** on the Inlead connector. An Inlead page opens: sign in if
-   asked, review the access (reading is always on; editing funnels can be
-   unchecked) and click **Permitir** (*Allow*).
+   asked, review the access (reading is always on; editing funnels starts
+   unchecked — check it only if the user wants drafts created or edited) and
+   click **Permitir** (*Allow*).
 3. Open a new chat and run the setup skill again.
 
 Do not add Inlead as a custom connector by URL: that gives the server without
@@ -98,7 +99,7 @@ use, or 90 days in total, the user signs in again.
 | Error | Cause | Tell the user |
 |---|---|---|
 | `UNAUTHENTICATED` | Connection expired or disconnected in the dashboard — or an old token is still set as a request header | Sign in again (§2). If a header with a token was configured by hand or by plugin 0.4.x, remove it: with the header set, the client never offers the sign-in |
-| `ABILITY_REQUIRED` | Connected with read-only access and asked for an edit | Disconnect in "Minha conta > Integrações" and sign in again keeping **editing** checked |
+| `ABILITY_REQUIRED` | Connected with read-only access and asked for an edit | Disconnect in "Minha conta > Integrações" and sign in again, this time checking **editing** |
 | `SUBSCRIPTION_REQUIRED` | The account has no active plan, or its plan does not include this tool | Say which plan the account has (`get_account_usage`) and that plans are managed in the Inlead dashboard |
 | `ACCOUNT_BLOCKED` | Account blocked on the platform | Contact Inlead support; no tool works until resolved |
 | The Inlead page says the subscription is inactive, or the limit of connected apps was reached | Account without an active plan, or 20 active connections | Regularize the plan, or disconnect an old connection in "Minha conta > Integrações" |
