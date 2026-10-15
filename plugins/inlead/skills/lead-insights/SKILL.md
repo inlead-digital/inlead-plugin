@@ -24,7 +24,8 @@ individual lead, and you never speculate about one.
   `list_funnels` and use the one with the most leads, saying so, or ask when
   several are close.
 - Period: the one the user asked for; none → `period: "month"`; a named month
-  → `periodMonth`.
+  → `periodMonth`. Periods are calendar periods that end yesterday: today's
+  leads are not in them.
 - No leads in the period → say so and stop; suggest a longer period.
 
 ## Find the questions
@@ -60,6 +61,11 @@ of guessing.
   so; `low` (under 30) → a trend at most.
 - `score`, when present, is the funnel's own scoring of that option: use it to
   describe qualification, not to judge people.
+- `answersState` `distribution_disabled`, `sensitive_blocked` (health funnel)
+  or `small_sample` (under 10 leads) → there is no distribution to read: tell
+  the user it is withheld to protect the leads and stop. `suppressed: true` →
+  under 10 leads chose that option; call it "few leads", never a number.
+  Never estimate a hidden count from the others.
 
 ## Deliver
 
