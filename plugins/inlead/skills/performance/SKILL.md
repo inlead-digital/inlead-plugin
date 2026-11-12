@@ -1,7 +1,7 @@
 ---
 name: performance
 description: >
-  Diagnoses the conversion of Inlead funnels: which funnel is worst, where
+  Analyzes the conversion of Inlead funnels: which funnel is worst, where
   people drop off, and why. Use when the user asks about conversion, drop-off,
   abandonment, lead rate, a performance drop, "which funnel converts worst",
   "where am I losing people", or wants to compare funnels. Read-only.
@@ -10,7 +10,7 @@ compatibility: Requires a connection to Inlead's MCP server (sign in with the In
 disallowed-tools: mcp__plugin_inlead_inlead__create_funnel mcp__plugin_inlead_inlead__edit_funnel
 ---
 
-# Diagnose conversion
+# Analyze conversion
 
 ## Which funnel
 
@@ -32,10 +32,10 @@ Take the funnel from the user's request, if they named one.
    one call.
 4. `get_funnel_step_answers` — *why*: only for the steps that step 3
    flagged. `distribution_disabled`, `sensitive_blocked` or `small_sample`
-   means the answers are withheld to protect the leads: say so, diagnose from
+   means the answers are withheld to protect the leads: say so, work from
    steps 2–3 only, and never estimate a hidden or `suppressed` count.
 
-**Stop early when there is nothing to diagnose.** If `list_funnels` shows no
+**Stop early when there is nothing to analyze.** If `list_funnels` shows no
 starts for every funnel in the period, say so and stop: suggest a longer
 period, or checking whether the funnels are published — do not run steps 2–4
 to reconfirm zeros.

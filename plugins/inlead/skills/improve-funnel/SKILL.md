@@ -47,7 +47,7 @@ Put each change in one bucket:
 
 - **Apply** — expressible as edit operations on the draft: headline, text,
   button and option copy; step order; a missing block the architecture calls
-  for (loading, diagnosis); moving the contact request later; removing a dead
+  for (loading, personalized result); moving the contact request later; removing a dead
   end; navigation; using the person's answers in the result; an entrance
   animation or an attention emphasis on a block, only when the user asks
   for motion (the `effects` contract in `get_component_contracts`).
