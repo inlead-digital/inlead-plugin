@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "inlead",
   "displayName": "Inlead",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "Connect Claude to your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account when Claude asks: no token to copy.",
   "author": {
     "name": "Inlead",
@@ -11,7 +11,7 @@
   },
   "homepage": "https://inlead.digital",
   "icon": "./assets/logo.svg",
-  "documentationUrl": "https://ajuda.inlead.digital",
+  "documentationUrl": "https://ajuda.inlead.digital/conectar-claude-a-inlead",
   "supportUrl": "https://ajuda.inlead.digital",
   "privacyPolicyUrl": "https://inlead.digital/comunicados/politica-de-privacidade/",
   "termsOfServiceUrl": "https://inlead.digital/comunicados/termos-de-uso/",
