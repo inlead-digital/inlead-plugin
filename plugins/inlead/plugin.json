@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "inlead",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Connect your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account: no token to copy.",
   "author": {
     "name": "Inlead",
@@ -38,6 +38,7 @@
           "Review my Inlead funnel draft before I publish it."
         ],
         "brandColor": "#000000",
+        "brandColorDark": "#FFFFFF",
         "composerIcon": "./assets/logo.svg",
         "logo": "./assets/logo.svg"
       },
