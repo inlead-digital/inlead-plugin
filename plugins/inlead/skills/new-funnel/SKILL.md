@@ -4,7 +4,6 @@ description: Draft a lead-capture funnel on Inlead from a briefing. Use only whe
 argument-hint: "[briefing]"
 disable-model-invocation: true
 compatibility: Requires a connection to Inlead's MCP server (sign in with the Inlead account; see the inlead:setup skill).
-allowed-tools: mcp__plugin_inlead_inlead__list_funnels mcp__plugin_inlead_inlead__get_funnel_steps mcp__plugin_inlead_inlead__list_components mcp__plugin_inlead_inlead__get_component_contracts mcp__plugin_inlead_inlead__validate_funnel_draft
 ---
 
 Draft a funnel on Inlead. Follow the `inlead:build-funnel` skill throughout.
