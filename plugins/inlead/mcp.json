@@ -3,7 +3,17 @@
   "mcpServers": {
     "inlead": {
       "type": "streamable-http",
-      "url": "https://api.ai.inlead.tech/mcp"
+      "url": "https://api.ai.inlead.tech/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            }
+          }
+        }
+      }
     }
   }
 }
