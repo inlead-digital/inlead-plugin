@@ -2,8 +2,8 @@
 
 You only need an Inlead account with an active plan. There is no token to
 copy: your assistant opens an Inlead page where you sign in and approve the
-access. Reading your funnels is always included; you can uncheck **editing**
-on that page to connect in read-only mode.
+access. Reading your funnels is always included; **editing** starts unchecked on
+that page: check it only if the assistant should create or edit drafts.
 
 ## Claude (claude.ai web or Claude Desktop)
 
@@ -88,7 +88,7 @@ it; after 30 days without use, or 90 days in total, sign in again.
 | Symptom | Likely cause | What to do |
 |---|---|---|
 | `UNAUTHENTICATED` | The connection expired or was disconnected, or an old token is still set as a header | Sign in again; if you had configured a token header (plugin 0.4.x or by hand), remove it |
-| `ABILITY_REQUIRED` when editing | You connected in read-only mode | Disconnect in the dashboard and sign in again keeping **editing** checked |
+| `ABILITY_REQUIRED` when editing | You connected in read-only mode | Disconnect in the dashboard and sign in again, this time checking **editing** |
 | `SUBSCRIPTION_REQUIRED` | The account has no active plan, or the plan does not include that feature | Check the plan in the Inlead dashboard |
 | Inlead tools do not appear | The plugin was not installed, or you have not signed in yet | Reinstall the plugin and sign in |
 | The Inlead page says the subscription is inactive | The account has no active plan | Regularize the plan, then connect again |
