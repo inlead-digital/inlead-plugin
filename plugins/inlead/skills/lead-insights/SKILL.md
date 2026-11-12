@@ -8,7 +8,6 @@ description: >
   choose in my quiz", or wants to know their audience better. Read-only.
 argument-hint: "[funnel name or id] [period]"
 compatibility: Requires a connection to Inlead's MCP server (sign in with the Inlead account; see the inlead:setup skill).
-allowed-tools: mcp__plugin_inlead_inlead__list_funnels mcp__plugin_inlead_inlead__get_funnel_steps mcp__plugin_inlead_inlead__get_funnel_step_answers
 disallowed-tools: mcp__plugin_inlead_inlead__create_funnel mcp__plugin_inlead_inlead__edit_funnel
 ---
 

@@ -8,7 +8,6 @@ description: >
   "implement these changes", "make these edits" or "improve my funnel".
 argument-hint: "[funnel name or id]"
 compatibility: Requires a connection to Inlead's MCP server with editing allowed (sign in with the Inlead account; see the inlead:setup skill).
-allowed-tools: mcp__plugin_inlead_inlead__list_funnels mcp__plugin_inlead_inlead__get_funnel_steps mcp__plugin_inlead_inlead__list_components mcp__plugin_inlead_inlead__get_component_contracts mcp__plugin_inlead_inlead__validate_funnel_draft
 ---
 
 # Improve a funnel

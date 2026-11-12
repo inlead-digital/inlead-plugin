@@ -7,7 +7,6 @@ description: >
   Inlead", "sign in to Inlead", "my token doesn't work", or "I can't see my
   funnels".
 compatibility: Requires a connection to Inlead's MCP server (sign in with the Inlead account). This is the only Inlead skill that is useful before that connection exists.
-allowed-tools: mcp__plugin_inlead_inlead__get_account_usage
 ---
 
 # Connect Inlead
