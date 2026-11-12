@@ -7,7 +7,6 @@ description: >
   of every funnel, or what moved. Read-only.
 argument-hint: "[day|week|month|YYYY-MM]"
 compatibility: Requires a connection to Inlead's MCP server (sign in with the Inlead account; see the inlead:setup skill).
-allowed-tools: mcp__plugin_inlead_inlead__list_funnels mcp__plugin_inlead_inlead__get_funnel_performance
 disallowed-tools: mcp__plugin_inlead_inlead__create_funnel mcp__plugin_inlead_inlead__edit_funnel
 ---
 

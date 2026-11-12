@@ -7,7 +7,6 @@ description: >
   "where am I losing people", or wants to compare funnels. Read-only.
 argument-hint: "[funnel name or id]"
 compatibility: Requires a connection to Inlead's MCP server (sign in with the Inlead account; see the inlead:setup skill).
-allowed-tools: mcp__plugin_inlead_inlead__list_funnels mcp__plugin_inlead_inlead__get_funnel_performance mcp__plugin_inlead_inlead__get_funnel_steps_report mcp__plugin_inlead_inlead__get_funnel_step_answers mcp__plugin_inlead_inlead__get_funnel_steps
 disallowed-tools: mcp__plugin_inlead_inlead__create_funnel mcp__plugin_inlead_inlead__edit_funnel
 ---
 
