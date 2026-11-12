@@ -49,7 +49,9 @@ Put each change in one bucket:
 - **Apply** — expressible as edit operations on the draft: headline, text,
   button and option copy; step order; a missing block the architecture calls
   for (loading, diagnosis); moving the contact request later; removing a dead
-  end; navigation; using the person's answers in the result.
+  end; navigation; using the person's answers in the result; an entrance
+  animation or an attention emphasis on a block, only when the user asks
+  for motion (the `effects` contract in `get_component_contracts`).
 - **Needs content from the user** — anything that states a fact about the
   business: expert name and credentials, testimonials, numbers, prices,
   guarantee terms, media mentions, scarcity. Never invent them. Ask for them;
