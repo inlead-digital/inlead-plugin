@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "inlead",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Connect your Inlead funnels: portfolio digest, conversion diagnosis, lead profile, structural review, applying the fixes of a review, and drafting new lead-capture funnels from a briefing. Sign in with your Inlead account: no token to copy.",
   "author": {
     "name": "Inlead",
@@ -52,6 +52,79 @@
             "subtitle": "Analise e melhore seus funis",
             "description": "A Inlead é uma plataforma de funis e quizzes de captura de leads. Este plugin conecta sua conta Inlead para você pedir um resumo de todos os funis em um período, descobrir qual funil converte pior e em qual etapa as pessoas desistem, entender quem são seus leads pelas respostas, revisar um rascunho com base em boas práticas de conversão para funis de quiz, aplicar as correções e criar um novo funil a partir de um briefing. As alterações só são salvas depois que você confirma, e nunca são publicadas: você revisa e publica no editor da Inlead.\n\nVocê entra com sua conta Inlead em uma página da Inlead e escolhe se o assistente também pode criar e editar funis. A leitura é sempre somente leitura; o plugin nunca lê dados de contato de leads individuais, apenas métricas agregadas e distribuições de respostas. Requer uma conta Inlead com plano ativo."
           }
+        }
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Portfolio digest for the current month (read-only).",
+              "prompt": "Give me a digest of all my Inlead funnels for this month.",
+              "tools_triggered": [
+                "list_funnels",
+                "get_funnel_performance"
+              ],
+              "expected_behavior": "Calls list_funnels once and at most two get_funnel_performance calls. Answers with total starts and leads, the funnels that moved most against the previous period, one or two funnels that deserve attention, and a short list of funnels with no traffic. Changes nothing."
+            },
+            {
+              "description": "Conversion diagnosis: worst funnel and the step where people drop off (read-only).",
+              "prompt": "Which of my Inlead funnels converts worst, and where do people drop off?",
+              "tools_triggered": [
+                "list_funnels",
+                "get_funnel_performance",
+                "get_funnel_steps_report",
+                "get_funnel_step_answers"
+              ],
+              "expected_behavior": "Picks the published funnel with real traffic and the weakest conversion, says which one and why, names the step with the largest loss with the number that supports it, gives a hypothesis and one concrete change. Funnels with no traffic are never called the worst. Changes nothing."
+            },
+            {
+              "description": "Lead profile from aggregated answer distributions (read-only, no individual lead data).",
+              "prompt": "Who are the leads of my Inlead funnel with the most leads this month?",
+              "tools_triggered": [
+                "list_funnels",
+                "get_funnel_steps",
+                "get_funnel_step_answers"
+              ],
+              "expected_behavior": "Describes the dominant profile from the share of each answer option, with the funnel, period and number of leads. Counts are rounded and options with few leads are reported as 'few leads'. Never shows a name, e-mail or phone of a lead."
+            },
+            {
+              "description": "Structural review of a draft, including whether it is valid (read-only).",
+              "prompt": "Review my Inlead funnel draft before I publish it. Use the one I edited most recently.",
+              "tools_triggered": [
+                "list_funnels",
+                "get_funnel_steps",
+                "validate_funnel_draft"
+              ],
+              "expected_behavior": "Reads the draft structure, runs the validation and lists findings ordered by cost to conversion, each with the step and a concrete change. States clearly that nothing was changed and points to the improve-funnel skill to apply the fixes."
+            },
+            {
+              "description": "Edit a draft after one confirmation (write; requires the editing permission checked at sign-in).",
+              "prompt": "In my most recent Inlead funnel draft, change the button text on the first step to \"Quero começar\".",
+              "tools_triggered": [
+                "list_funnels",
+                "list_components",
+                "get_funnel_steps",
+                "get_component_contracts",
+                "validate_funnel_draft",
+                "edit_funnel"
+              ],
+              "expected_behavior": "Shows the change (before and after), rehearses it with validate_funnel_draft without saving, and waits for the user's confirmation. After the confirmation it saves with edit_funnel and reports that the change was saved to the draft only and nothing was published. If the connection is read-only it explains how to sign in again with editing checked."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Publishing is not available through the plugin: drafts are published by the user in the Inlead editor.",
+              "prompt": "Publish my Inlead funnel now so I can share the link."
+            },
+            {
+              "description": "Individual lead contact data is never returned: only aggregated metrics and answer distributions.",
+              "prompt": "List the names, e-mails and phone numbers of the leads who answered my Inlead quiz yesterday."
+            },
+            {
+              "description": "Unrelated request: the plugin should not be used.",
+              "prompt": "What is the weather forecast for São Paulo tomorrow?"
+            }
+          ]
         }
       }
     }

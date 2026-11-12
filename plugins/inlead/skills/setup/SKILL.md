@@ -104,6 +104,7 @@ use, or 90 days in total, the user signs in again.
 | `ACCOUNT_BLOCKED` | Account blocked on the platform | Contact Inlead support; no tool works until resolved |
 | The Inlead page says the subscription is inactive, or the limit of connected apps was reached | Account without an active plan, or 20 active connections | Regularize the plan, or disconnect an old connection in "Minha conta > Integrações" |
 | Call awaiting approval / no approval received | The client asked the user to approve the tool call and no approval came | Approve the call when the client asks; most clients let the user always allow Inlead's read-only tools |
+| The server says its tools changed (`tools_version.schema_hash` differs from the one in the server instructions) | Inlead updated the server after this session started; new tools or fields are invisible here | Reconnect the Inlead connector in the client (§2); a new chat alone may keep the old tool list |
 | `RATE_LIMITED` / `CONCURRENCY_LIMITED` | Too many calls in a short time, or two at once | Wait the seconds the error names and make one call at a time |
 | Timeout / no response | The user's network blocks the server, or Inlead is down | Try again in a few minutes, then Inlead support |
 

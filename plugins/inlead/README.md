@@ -33,7 +33,8 @@ fixes, or draft a new funnel from a briefing.
 - An Inlead account with an active plan.
 - The first time, your assistant opens an Inlead page where you sign in and
   approve the access. Reading your funnels is always included; creating and
-  editing funnels can be turned off on that page. There is no token to copy.
+  editing funnels starts unchecked on that page, so check it to allow drafts
+  to be created or edited. There is no token to copy.
 
 ## What the plugin connects to
 
