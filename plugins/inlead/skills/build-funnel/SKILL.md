@@ -11,7 +11,7 @@ compatibility: Requires a connection to Inlead's MCP server (sign in with the In
 
 # Build a funnel that converts
 
-## The server owns the protocol
+## The server owns the rules
 
 Before the first write, call `list_components` once. It returns the
 authoring rules, this server's usage guide and the component catalog; the
@@ -49,26 +49,26 @@ driver is **completing this sequence, in order** — not the number of steps
 
 ```
  1. HOOK           promise [result + timeframe + mechanism, "without X"] + first
-                   question in ONE click (age or goal) — never a form
+                   question in ONE click (goal or experience level) — never a form
  2. AUTHORITY      who delivers: expert/creator video, media mention — before any offer
- 3. SEGMENTATION   the questions that branch (goal, gender, profile) → tracks
- 4. PROFILING+PAIN questions interleaved with content and proof; pain agitation,
-                   ideally conditional on the segment
+ 3. SEGMENTATION   the questions that branch (goal, experience, profile) → tracks
+ 4. PROFILING      questions interleaved with content and proof; the problem
+                   made concrete, ideally conditional on the segment
  5. YES-LADDER     one or two questions that induce a "yes"
- 6. MEASURES       inputs the diagnosis is computed from (weight/height in
-                   weight-loss funnels — vertical-specific; use what fits)
+ 6. INPUTS         the numbers the result is computed from (vertical-specific:
+                   current revenue, hours available, budget — use what fits)
  7. LOADING        "personalizing your plan…" (6–9 s), social proof while it loads
- 8. DIAGNOSIS      report with the person's own numbers + a qualifying verdict
-                   ("you fit the protocol")
+ 8. RESULT         report with the person's own numbers + a qualifying verdict
+                   ("you fit the program")
  9. CAPTURE        first name may come early; e-mail/phone here, late, framed as
                    "to receive your plan"
-10. OFFER          header with {{name}} → before/after → value stack with a
+10. OFFER          header with {{name}} → today × target → value stack with a
                    per-day anchor → scarcity → 7-day guarantee → 2+ CTAs
 11. CHECKOUT       external redirect
 12. DOWNSELL       optional: discount page after refusal (rare)
 ```
 
-A proposal that skips HOOK-promise, AUTHORITY, LOADING or DIAGNOSIS must say
+A proposal that skips HOOK-promise, AUTHORITY, LOADING or RESULT must say
 why. A funnel that goes from the questions straight to the offer is the main
 improvement candidate.
 
@@ -79,7 +79,7 @@ improvement candidate.
 - **AG-1** Entry is a one-click question, not a form or a contact request. (universal)
 - **AG-2** The opening headline states a specific result and a timeframe, with a
   number. (universal)
-- **AG-3** The sequence loading → personalized diagnosis → offer exists. (universal)
+- **AG-3** The sequence loading → personalized result → offer exists. (universal)
 - **AG-4** Result and offer use the person's variables — real personalization,
   not just the name. (universal)
 - **AG-5** E-mail and phone only after value is delivered; first name may come
@@ -94,7 +94,7 @@ improvement candidate.
   ("R$ X/day"). (universal)
 - **AG-9** Explicit guarantee near the CTA. (nearly universal)
 - **AG-10** Specific social proof — photo, name, number — never a weak counter. (universal)
-- **AG-11** Before/after and loss framing in the offer. (universal)
+- **AG-11** Today × target contrast and loss framing in the offer. (universal)
 
 **P2 — refinements often missing (high theoretical return)**
 
@@ -116,7 +116,7 @@ improvement candidate.
 
 ## Confidence
 
-These practices are strongest for B2C quiz funnels (health, wellness, income
+These practices are strongest for B2C quiz funnels (courses, coaching, income
 and skills). Outside that — B2B, high ticket, product recommendation — present
 the architecture as a common pattern of high-converting funnels, lower the
 confidence, and lean on the account's own reference funnel.

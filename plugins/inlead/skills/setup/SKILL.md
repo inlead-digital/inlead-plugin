@@ -1,7 +1,7 @@
 ---
 name: setup
 description: >
-  Connects the user's Inlead account and diagnoses connection or sign-in
+  Connects the user's Inlead account and troubleshoots connection or sign-in
   problems. Use right after the Inlead plugin is installed, when the Inlead
   tools are missing or fail, or when the user says "connect Inlead", "set up
   Inlead", "sign in to Inlead", "my token doesn't work", or "I can't see my
@@ -14,7 +14,7 @@ compatibility: Requires a connection to Inlead's MCP server (sign in with the In
 The plugin talks to Inlead's MCP server (`https://api.ai.inlead.tech/mcp`) over
 HTTPS. The user signs in with their Inlead account and approves the access on
 an Inlead page; there is no token to copy. Nothing is installed on the user's
-machine. Do not inspect local files, settings or credentials to diagnose —
+machine. Do not inspect local files, settings or credentials to troubleshoot —
 everything you need is in your tool list and in the steps below.
 
 ## 1. Check the connection
@@ -23,12 +23,12 @@ Call `get_account_usage`. It is the cheapest call and changes nothing.
 
 - **Returned a plan and limits** → connected. Tell the user the plan and how
   many funnels they have, then ask what they want to do. Good next steps: the
-  `inlead:digest` skill for an overview, `inlead:performance` for a diagnosis,
+  `inlead:digest` skill for an overview, `inlead:performance` for a drop-off analysis,
   `inlead:lead-insights` to understand who the leads are, and
   `inlead:new-funnel` to draft one (the user starts it; it may not show in
   your own skill list).
 - **The tool is not in your list** → first search for or load the Inlead
-  tools: some clients load MCP tools on demand, and a healthy connection can
+  tools: some clients load MCP tools on demand, and a working connection can
   look empty until you do. If it is still missing after that, the connection
   was never added or the user has not signed in yet. Walk the user through §2
   for their client.

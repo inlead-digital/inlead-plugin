@@ -2,7 +2,7 @@
 name: lead-insights
 description: >
   Read-only profile of who a funnel's leads are, from how they answered the
-  funnel's questions: dominant profiles, goals, pains and objections, and what
+  funnel's questions: dominant profiles, goals, problems and objections, and what
   that suggests for messaging and offer. Use when the user asks "who are my
   leads", "what do my leads answer", "profile my audience", "what do people
   choose in my quiz", or wants to know their audience better. Read-only.
@@ -31,11 +31,11 @@ individual lead, and you never speculate about one.
 
 `get_funnel_steps` (structure only). Each step's `producers` lists the
 questions it asks. Only choice questions have a distribution; free-input
-fields (name, e-mail, phone, height, weight, date) come back empty — skip
+fields (name, e-mail, phone and other typed inputs) come back empty — skip
 them.
 
-Pick the questions that describe the person: segmentation (goal, gender, age
-range, profile), pains and objections, habits, intent and budget.
+Pick the questions that describe the person: segmentation (goal,
+experience, profile), problems and objections, habits, intent and budget.
 
 ## Read the answers — the budget decides
 
@@ -60,7 +60,7 @@ of guessing.
   so; `low` (under 30) → a trend at most.
 - `score`, when present, is the funnel's own scoring of that option: use it to
   describe qualification, not to judge people.
-- `answersState` `distribution_disabled`, `sensitive_blocked` (health funnel)
+- `answersState` `distribution_disabled`, `sensitive_blocked` (sensitive category)
   or `small_sample` (under 10 leads) → there is no distribution to read: tell
   the user it is withheld to protect the leads and stop. `suppressed: true` →
   under 10 leads chose that option; call it "few leads", never a number.

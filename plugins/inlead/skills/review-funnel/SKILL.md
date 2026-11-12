@@ -46,7 +46,7 @@ Report only what fails. P0 first.
 1. **AG-1** The first step is a one-click question, not a form or a contact
    request.
 2. **AG-2** The opening headline states a specific result and a timeframe.
-3. **AG-3** There is a loading → personalized diagnosis → offer sequence, not a
+3. **AG-3** There is a loading → personalized result → offer sequence, not a
    jump from the questions to the offer.
 4. **AG-4** The result and the offer use the person's answers (variables).
 5. **AG-5** E-mail and phone are asked after value is delivered; a first name

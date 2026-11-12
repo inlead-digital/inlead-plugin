@@ -30,7 +30,7 @@ catalog, and the contracts of every type you will emit.
 First show the block plan with a step count per block, for example:
 
 > Hook (1) → Segmentation (2) → Profiling + proof (5) → Loading (1) →
-> Diagnosis (1) → Capture (1) → Offer / result (1) — 12 steps
+> Personalized result (1) → Capture (1) → Offer (1) — 12 steps
 
 Say which blocks of the reference architecture you left out and why. Then
 detail each step: what it asks or shows, and where the contact request goes.

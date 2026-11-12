@@ -9,18 +9,18 @@ segment gets its own track.
 
 1. **Hook** — a numeric promise with a timeframe and objections removed
    ("[result] in [days] — without X, without Y"). First interaction: one
-   click, usually age or goal. An escape button for returning users ("already
+   click, usually the goal. An escape button for returning users ("already
    did the quiz, go to the end") avoids frustrating repeat visitors.
 2. **Segmentation** — the goal question (e.g. extra income / change of career /
    become a professional) opens the tracks.
-3. **Profiling + pain** — questions about situation and context (family,
-   routine, interests) alternating with content and proof screens. Pain
-   agitation conditional on the segment: a different alert per answer
+3. **Profiling** — questions about situation and context (work, routine,
+   interests) alternating with content and proof screens. The problem made
+   concrete, conditional on the segment: a different alert per answer
    bracket, not one generic warning.
-4. **Diagnosis** — a computed indicator with a qualifying verdict ("your
+4. **Result** — a computed indicator with a qualifying verdict ("your
    potential score is N — you fit the profile").
 5. **Capture** — e-mail, phone and name **late** (around three quarters of the
-   way), after the diagnosis, framed as "to receive your plan".
+   way), after the result, framed as "to receive your plan".
 6. **Offer or handoff** — personalized with the indicator, the segment and the
    name.
 7. **Downsell (optional)** — a discount page after a refusal.

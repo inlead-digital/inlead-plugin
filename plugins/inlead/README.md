@@ -13,7 +13,7 @@ fixes, or draft a new funnel from a briefing.
 - "Give me a digest of all my funnels for this month."
 - "Who are the leads of my quiz, based on what they answer?"
 - "Review my funnel draft before I publish it, then apply the fixes."
-- "Draft a quiz funnel for a dental clinic that offers a free evaluation."
+- "Draft a quiz funnel for a language school that offers a free placement test."
 
 ## Skills
 
@@ -21,7 +21,7 @@ fixes, or draft a new funnel from a briefing.
 |---|---|
 | `inlead:setup` | Checks the connection and walks through signing in |
 | `inlead:digest` | Read-only digest of every funnel for a period: volume, leads, conversion, what moved |
-| `inlead:performance` | Read-only diagnosis of the step where a funnel loses the most people, and why |
+| `inlead:performance` | Read-only analysis of the step where a funnel loses the most people, and why |
 | `inlead:lead-insights` | Read-only profile of a funnel's leads from the distribution of their answers |
 | `inlead:review-funnel` | Read-only structural review of a draft, plus whether it is valid to publish |
 | `inlead:improve-funnel` | Applies the fixes of a review or your list of changes: rehearses them without saving and waits for your confirmation |
@@ -30,7 +30,7 @@ fixes, or draft a new funnel from a briefing.
 
 ## Requirements
 
-- An Inlead account with an active plan.
+- An Inlead account.
 - The first time, your assistant opens an Inlead page where you sign in and
   approve the access. Reading your funnels is always included; creating and
   editing funnels starts unchecked on that page, so check it to allow drafts
